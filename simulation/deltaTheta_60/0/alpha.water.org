@@ -1,0 +1,1111 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.3.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      alpha.water;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    inletB
+    {
+        type            fixedValue;
+        value           uniform 1; 
+       
+    }
+
+    outletB
+    {
+        type            zeroGradient;
+        value           uniform 0; 
+    }
+
+    wallsB
+    {
+        type            constantAlphaContactAngle;
+        theta0          90;
+	limit		gradient;
+        value           uniform 0; 
+    }
+
+    solidRest
+    {
+        type            constantAlphaContactAngle;
+        theta0          90;
+        limit           gradient;
+        value           uniform 0;
+    }
+
+    frontAndBack
+    {
+	type		empty;
+    }
+
+    r1_1
+    {
+        type            constantAlphaContactAngle;
+        theta0          86;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r1_2
+    {
+        type            constantAlphaContactAngle;
+        theta0          104;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r1_3
+    {
+        type            constantAlphaContactAngle;
+        theta0          61;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r1_4
+    {
+        type            constantAlphaContactAngle;
+        theta0          79;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r1_5
+    {
+        type            constantAlphaContactAngle;
+        theta0          70;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r1_6
+    {
+        type            constantAlphaContactAngle;
+        theta0          67;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r1_7
+    {
+        type            constantAlphaContactAngle;
+        theta0          72;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r1_8
+    {
+        type            constantAlphaContactAngle;
+        theta0          82;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r1_9
+    {
+        type            constantAlphaContactAngle;
+        theta0          85;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r1_10
+    {
+        type            constantAlphaContactAngle;
+        theta0          93;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r2_1
+    {
+        type            constantAlphaContactAngle;
+        theta0          86;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r2_2
+    {
+        type            constantAlphaContactAngle;
+        theta0          102;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r2_3
+    {
+        type            constantAlphaContactAngle;
+        theta0          73;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r2_4
+    {
+        type            constantAlphaContactAngle;
+        theta0          114;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r2_5
+    {
+        type            constantAlphaContactAngle;
+        theta0          63;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r2_6
+    {
+        type            constantAlphaContactAngle;
+        theta0          101;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r2_7
+    {
+        type            constantAlphaContactAngle;
+        theta0          86;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r2_8
+    {
+        type            constantAlphaContactAngle;
+        theta0          95;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r2_9
+    {
+        type            constantAlphaContactAngle;
+        theta0          70;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r2_10
+    {
+        type            constantAlphaContactAngle;
+        theta0          73;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r3_1
+    {
+        type            constantAlphaContactAngle;
+        theta0          109;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r3_2
+    {
+        type            constantAlphaContactAngle;
+        theta0          119;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r3_3
+    {
+        type            constantAlphaContactAngle;
+        theta0          80;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r3_4
+    {
+        type            constantAlphaContactAngle;
+        theta0          103;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r3_5
+    {
+        type            constantAlphaContactAngle;
+        theta0          114;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r3_6
+    {
+        type            constantAlphaContactAngle;
+        theta0          115;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r3_7
+    {
+        type            constantAlphaContactAngle;
+        theta0          66;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r3_8
+    {
+        type            constantAlphaContactAngle;
+        theta0          63;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r3_9
+    {
+        type            constantAlphaContactAngle;
+        theta0          71;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r3_10
+    {
+        type            constantAlphaContactAngle;
+        theta0          114;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r4_1
+    {
+        type            constantAlphaContactAngle;
+        theta0          67;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r4_2
+    {
+        type            constantAlphaContactAngle;
+        theta0          86;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r4_3
+    {
+        type            constantAlphaContactAngle;
+        theta0          119;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r4_4
+    {
+        type            constantAlphaContactAngle;
+        theta0          93;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r4_5
+    {
+        type            constantAlphaContactAngle;
+        theta0          103;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r4_6
+    {
+        type            constantAlphaContactAngle;
+        theta0          80;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r4_7
+    {
+        type            constantAlphaContactAngle;
+        theta0          102;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r4_8
+    {
+        type            constantAlphaContactAngle;
+        theta0          111;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r4_9
+    {
+        type            constantAlphaContactAngle;
+        theta0          62;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r4_10
+    {
+        type            constantAlphaContactAngle;
+        theta0          106;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r5_1
+    {
+        type            constantAlphaContactAngle;
+        theta0          120;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r5_2
+    {
+        type            constantAlphaContactAngle;
+        theta0          106;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r5_3
+    {
+        type            constantAlphaContactAngle;
+        theta0          78;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r5_4
+    {
+        type            constantAlphaContactAngle;
+        theta0          108;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r5_5
+    {
+        type            constantAlphaContactAngle;
+        theta0          67;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r5_6
+    {
+        type            constantAlphaContactAngle;
+        theta0          88;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r5_7
+    {
+        type            constantAlphaContactAngle;
+        theta0          116;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r5_8
+    {
+        type            constantAlphaContactAngle;
+        theta0          79;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r5_9
+    {
+        type            constantAlphaContactAngle;
+        theta0          78;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r5_10
+    {
+        type            constantAlphaContactAngle;
+        theta0          69;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r6_1
+    {
+        type            constantAlphaContactAngle;
+        theta0          62;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r6_2
+    {
+        type            constantAlphaContactAngle;
+        theta0          102;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r6_3
+    {
+        type            constantAlphaContactAngle;
+        theta0          74;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r6_4
+    {
+        type            constantAlphaContactAngle;
+        theta0          77;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r6_5
+    {
+        type            constantAlphaContactAngle;
+        theta0          91;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r6_6
+    {
+        type            constantAlphaContactAngle;
+        theta0          64;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r6_7
+    {
+        type            constantAlphaContactAngle;
+        theta0          96;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r6_8
+    {
+        type            constantAlphaContactAngle;
+        theta0          70;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r6_9
+    {
+        type            constantAlphaContactAngle;
+        theta0          96;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r6_10
+    {
+        type            constantAlphaContactAngle;
+        theta0          103;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r7_1
+    {
+        type            constantAlphaContactAngle;
+        theta0          67;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r7_2
+    {
+        type            constantAlphaContactAngle;
+        theta0          86;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r7_3
+    {
+        type            constantAlphaContactAngle;
+        theta0          103;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r7_4
+    {
+        type            constantAlphaContactAngle;
+        theta0          86;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r7_5
+    {
+        type            constantAlphaContactAngle;
+        theta0          64;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r7_6
+    {
+        type            constantAlphaContactAngle;
+        theta0          93;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r7_7
+    {
+        type            constantAlphaContactAngle;
+        theta0          101;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r7_8
+    {
+        type            constantAlphaContactAngle;
+        theta0          92;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r7_9
+    {
+        type            constantAlphaContactAngle;
+        theta0          118;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r7_10
+    {
+        type            constantAlphaContactAngle;
+        theta0          96;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r8_1
+    {
+        type            constantAlphaContactAngle;
+        theta0          115;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r8_2
+    {
+        type            constantAlphaContactAngle;
+        theta0          69;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r8_3
+    {
+        type            constantAlphaContactAngle;
+        theta0          69;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r8_4
+    {
+        type            constantAlphaContactAngle;
+        theta0          110;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r8_5
+    {
+        type            constantAlphaContactAngle;
+        theta0          85;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r8_6
+    {
+        type            constantAlphaContactAngle;
+        theta0          71;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r8_7
+    {
+        type            constantAlphaContactAngle;
+        theta0          117;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r8_8
+    {
+        type            constantAlphaContactAngle;
+        theta0          82;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r8_9
+    {
+        type            constantAlphaContactAngle;
+        theta0          106;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r8_10
+    {
+        type            constantAlphaContactAngle;
+        theta0          105;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r9_1
+    {
+        type            constantAlphaContactAngle;
+        theta0          114;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r9_2
+    {
+        type            constantAlphaContactAngle;
+        theta0          99;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r9_3
+    {
+        type            constantAlphaContactAngle;
+        theta0          106;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r9_4
+    {
+        type            constantAlphaContactAngle;
+        theta0          82;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r9_5
+    {
+        type            constantAlphaContactAngle;
+        theta0          77;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r9_6
+    {
+        type            constantAlphaContactAngle;
+        theta0          115;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r9_7
+    {
+        type            constantAlphaContactAngle;
+        theta0          87;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r9_8
+    {
+        type            constantAlphaContactAngle;
+        theta0          119;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r9_9
+    {
+        type            constantAlphaContactAngle;
+        theta0          101;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r9_10
+    {
+        type            constantAlphaContactAngle;
+        theta0          98;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r10_1
+    {
+        type            constantAlphaContactAngle;
+        theta0          68;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r10_2
+    {
+        type            constantAlphaContactAngle;
+        theta0          118;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r10_3
+    {
+        type            constantAlphaContactAngle;
+        theta0          88;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r10_4
+    {
+        type            constantAlphaContactAngle;
+        theta0          96;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r10_5
+    {
+        type            constantAlphaContactAngle;
+        theta0          86;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r10_6
+    {
+        type            constantAlphaContactAngle;
+        theta0          75;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r10_7
+    {
+        type            constantAlphaContactAngle;
+        theta0          115;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r10_8
+    {
+        type            constantAlphaContactAngle;
+        theta0          96;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r10_9
+    {
+        type            constantAlphaContactAngle;
+        theta0          61;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r10_10
+    {
+        type            constantAlphaContactAngle;
+        theta0          98;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r11_1
+    {
+        type            constantAlphaContactAngle;
+        theta0          81;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r11_2
+    {
+        type            constantAlphaContactAngle;
+        theta0          93;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r11_3
+    {
+        type            constantAlphaContactAngle;
+        theta0          114;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r11_4
+    {
+        type            constantAlphaContactAngle;
+        theta0          83;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r11_5
+    {
+        type            constantAlphaContactAngle;
+        theta0          116;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r11_6
+    {
+        type            constantAlphaContactAngle;
+        theta0          99;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r11_7
+    {
+        type            constantAlphaContactAngle;
+        theta0          62;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r11_8
+    {
+        type            constantAlphaContactAngle;
+        theta0          117;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r11_9
+    {
+        type            constantAlphaContactAngle;
+        theta0          103;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r11_10
+    {
+        type            constantAlphaContactAngle;
+        theta0          120;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r12_1
+    {
+        type            constantAlphaContactAngle;
+        theta0          71;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r12_2
+    {
+        type            constantAlphaContactAngle;
+        theta0          69;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r12_3
+    {
+        type            constantAlphaContactAngle;
+        theta0          117;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r12_4
+    {
+        type            constantAlphaContactAngle;
+        theta0          103;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r12_5
+    {
+        type            constantAlphaContactAngle;
+        theta0          65;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r12_6
+    {
+        type            constantAlphaContactAngle;
+        theta0          106;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r12_7
+    {
+        type            constantAlphaContactAngle;
+        theta0          106;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r12_8
+    {
+        type            constantAlphaContactAngle;
+        theta0          117;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r12_9
+    {
+        type            constantAlphaContactAngle;
+        theta0          104;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r12_10
+    {
+        type            constantAlphaContactAngle;
+        theta0          69;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r13_1
+    {
+        type            constantAlphaContactAngle;
+        theta0          62;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r13_2
+    {
+        type            constantAlphaContactAngle;
+        theta0          63;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r13_3
+    {
+        type            constantAlphaContactAngle;
+        theta0          63;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r13_4
+    {
+        type            constantAlphaContactAngle;
+        theta0          76;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r13_5
+    {
+        type            constantAlphaContactAngle;
+        theta0          113;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r13_6
+    {
+        type            constantAlphaContactAngle;
+        theta0          93;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r13_7
+    {
+        type            constantAlphaContactAngle;
+        theta0          94;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r13_8
+    {
+        type            constantAlphaContactAngle;
+        theta0          112;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r13_9
+    {
+        type            constantAlphaContactAngle;
+        theta0          69;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r13_10
+    {
+        type            constantAlphaContactAngle;
+        theta0          78;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r14_1
+    {
+        type            constantAlphaContactAngle;
+        theta0          96;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r14_2
+    {
+        type            constantAlphaContactAngle;
+        theta0          119;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r14_3
+    {
+        type            constantAlphaContactAngle;
+        theta0          95;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r14_4
+    {
+        type            constantAlphaContactAngle;
+        theta0          62;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r14_5
+    {
+        type            constantAlphaContactAngle;
+        theta0          109;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r14_6
+    {
+        type            constantAlphaContactAngle;
+        theta0          75;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r14_7
+    {
+        type            constantAlphaContactAngle;
+        theta0          110;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r14_8
+    {
+        type            constantAlphaContactAngle;
+        theta0          84;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r14_9
+    {
+        type            constantAlphaContactAngle;
+        theta0          113;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r14_10
+    {
+        type            constantAlphaContactAngle;
+        theta0          106;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r15_1
+    {
+        type            constantAlphaContactAngle;
+        theta0          95;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r15_2
+    {
+        type            constantAlphaContactAngle;
+        theta0          69;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r15_3
+    {
+        type            constantAlphaContactAngle;
+        theta0          65;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r15_4
+    {
+        type            constantAlphaContactAngle;
+        theta0          68;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r15_5
+    {
+        type            constantAlphaContactAngle;
+        theta0          64;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r15_6
+    {
+        type            constantAlphaContactAngle;
+        theta0          68;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r15_7
+    {
+        type            constantAlphaContactAngle;
+        theta0          75;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r15_8
+    {
+        type            constantAlphaContactAngle;
+        theta0          104;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r15_9
+    {
+        type            constantAlphaContactAngle;
+        theta0          95;
+        limit           gradient;
+        value           uniform 0;
+    }
+    r15_10
+    {
+        type            constantAlphaContactAngle;
+        theta0          62;
+        limit           gradient;
+        value           uniform 0;
+    }
+
+}
+
+
+// ************************************************************************* //
