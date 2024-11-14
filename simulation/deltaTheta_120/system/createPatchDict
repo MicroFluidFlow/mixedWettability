@@ -1,0 +1,1551 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  dev
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      setFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+pointSync false;
+
+patches
+(
+	
+	{
+		name solidRest;
+		patchInfo
+		{
+			type wall;
+		}
+		constructFrom set;
+		set solidWall;
+	}
+
+        {
+                name r1_1;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region1_1;
+        }
+
+        {
+                name r1_2;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region1_2;
+        }
+
+        {
+                name r1_3;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region1_3;
+        }
+
+        {
+                name r1_4;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region1_4;
+        }
+
+        {
+                name r1_5;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region1_5;
+        }
+
+        {
+                name r1_6;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region1_6;
+        }
+
+        {
+                name r1_7;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region1_7;
+        }
+
+        {
+                name r1_8;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region1_8;
+        }
+
+        {
+                name r1_9;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region1_9;
+        }
+
+        {
+                name r1_10;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region1_10;
+        }
+
+
+        {
+                name r2_1;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region2_1;
+        }
+
+        {
+                name r2_2;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region2_2;
+        }
+
+        {
+                name r2_3;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region2_3;
+        }
+
+        {
+                name r2_4;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region2_4;
+        }
+
+        {
+                name r2_5;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region2_5;
+        }
+
+        {
+                name r2_6;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region2_6;
+        }
+
+        {
+                name r2_7;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region2_7;
+        }
+
+        {
+                name r2_8;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region2_8;
+        }
+
+        {
+                name r2_9;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region2_9;
+        }
+
+        {
+                name r2_10;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region2_10;
+        }
+
+
+        {
+                name r3_1;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region3_1;
+        }
+
+
+        {
+                name r3_2;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region3_2;
+        }
+
+        {
+                name r3_3;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region3_3;
+        }
+
+        {
+                name r3_4;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region3_4;
+        }
+
+        {
+                name r3_5;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region3_5;
+        }
+
+        {
+                name r3_6;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region3_6;
+        }
+
+        {
+                name r3_7;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region3_7;
+        }
+
+        {
+                name r3_8;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region3_8;
+        }
+
+        {
+                name r3_9;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region3_9;
+        }
+
+        {
+                name r3_10;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region3_10;
+        }
+
+
+        {
+                name r4_1;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region4_1;
+        }
+
+
+        {
+                name r4_2;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region4_2;
+        }
+
+        {
+                name r4_3;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region4_3;
+        }
+
+        {
+                name r4_4;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region4_4;
+        }
+
+        {
+                name r4_5;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region4_5;
+        }
+
+        {
+                name r4_6;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region4_6;
+        }
+
+        {
+                name r4_7;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region4_7;
+        }
+
+        {
+                name r4_8;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region4_8;
+        }
+
+        {
+                name r4_9;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region4_9;
+        }
+
+        {
+                name r4_10;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region4_10;
+        }
+
+
+        {
+                name r5_1;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region5_1;
+        }
+
+        {
+                name r5_2;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region5_2;
+        }
+
+        {
+                name r5_3;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region5_3;
+        }
+
+        {
+                name r5_4;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region5_4;
+        }
+
+        {
+                name r5_5;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region5_5;
+        }
+
+        {
+                name r5_6;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region5_6;
+        }
+
+        {
+                name r5_7;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region5_7;
+        }
+
+        {
+                name r5_8;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region5_8;
+        }
+
+        {
+                name r5_9;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region5_9;
+        }
+
+        {
+                name r5_10;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region5_10;
+        }
+
+
+        {
+                name r6_1;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region6_1;
+        }
+
+        {
+                name r6_2;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region6_2;
+        }
+
+        {
+                name r6_3;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region6_3;
+        }
+
+        {
+                name r6_4;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region6_4;
+        }
+
+        {
+                name r6_5;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region6_5;
+        }
+
+        {
+                name r6_6;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region6_6;
+        }
+
+        {
+                name r6_7;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region6_7;
+        }
+
+        {
+                name r6_8;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region6_8;
+        }
+
+        {
+                name r6_9;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region6_9;
+        }
+
+        {
+                name r6_10;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region6_10;
+        }
+
+
+        {
+                name r7_1;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region7_1;
+        }
+
+        {
+                name r7_2;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region7_2;
+        }
+
+        {
+                name r7_3;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region7_3;
+        }
+
+        {
+                name r7_4;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region7_4;
+        }
+
+        {
+                name r7_5;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region7_5;
+        }
+
+        {
+                name r7_6;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region7_6;
+        }
+
+        {
+                name r7_7;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region7_7;
+        }
+
+        {
+                name r7_8;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region7_8;
+        }
+
+        {
+                name r7_9;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region7_9;
+        }
+
+        {
+                name r7_10;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region7_10;
+        }
+
+
+        {
+                name r8_1;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region8_1;
+        }
+
+        {
+                name r8_2;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region8_2;
+        }
+
+        {
+                name r8_3;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region8_3;
+        }
+
+        {
+                name r8_4;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region8_4;
+        }
+
+        {
+                name r8_5;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region8_5;
+        }
+
+        {
+                name r8_6;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region8_6;
+        }
+
+        {
+                name r8_7;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region8_7;
+        }
+
+        {
+                name r8_8;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region8_8;
+        }
+
+        {
+                name r8_9;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region8_9;
+        }
+
+        {
+                name r8_10;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region8_10;
+        }
+
+
+        {
+                name r9_1;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region9_1;
+        }
+
+
+        {
+                name r9_2;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region9_2;
+        }
+
+        {
+                name r9_3;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region9_3;
+        }
+
+        {
+                name r9_4;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region9_4;
+        }
+
+        {
+                name r9_5;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region9_5;
+        }
+
+        {
+                name r9_6;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region9_6;
+        }
+
+        {
+                name r9_7;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region9_7;
+        }
+
+        {
+                name r9_8;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region9_8;
+        }
+
+        {
+                name r9_9;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region9_9;
+        }
+
+        {
+                name r9_10;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region9_10;
+        }
+
+
+        {
+                name r10_1;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region10_1;
+        }
+
+        {
+                name r10_2;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region10_2;
+        }
+
+        {
+                name r10_3;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region10_3;
+        }
+
+        {
+                name r10_4;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region10_4;
+        }
+
+        {
+                name r10_5;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region10_5;
+        }
+
+        {
+                name r10_6;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region10_6;
+        }
+
+        {
+                name r10_7;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region10_7;
+        }
+
+        {
+                name r10_8;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region10_8;
+        }
+
+        {
+                name r10_9;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region10_9;
+        }
+
+        {
+                name r10_10;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region10_10;
+        }
+
+
+        {
+                name r11_1;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region11_1;
+        }
+
+        {
+                name r11_2;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region11_2;
+        }
+
+        {
+                name r11_3;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region11_3;
+        }
+
+        {
+                name r11_4;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region11_4;
+        }
+
+        {
+                name r11_5;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region11_5;
+        }
+
+        {
+                name r11_6;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region11_6;
+        }
+
+        {
+                name r11_7;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region11_7;
+        }
+
+        {
+                name r11_8;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region11_8;
+        }
+
+        {
+                name r11_9;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region11_9;
+        }
+
+        {
+                name r11_10;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region11_10;
+        }
+
+
+        {
+                name r12_1;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region12_1;
+        }
+
+        {
+                name r12_2;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region12_2;
+        }
+
+        {
+                name r12_3;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region12_3;
+        }
+
+        {
+                name r12_4;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region12_4;
+        }
+
+        {
+                name r12_5;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region12_5;
+        }
+
+        {
+                name r12_6;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region12_6;
+        }
+
+        {
+                name r12_7;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region12_7;
+        }
+
+        {
+                name r12_8;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region12_8;
+        }
+
+        {
+                name r12_9;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region12_9;
+        }
+
+        {
+                name r12_10;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region12_10;
+        }
+
+
+        {
+                name r13_1;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region13_1;
+        }
+
+        {
+                name r13_2;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region13_2;
+        }
+
+        {
+                name r13_3;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region13_3;
+        }
+
+        {
+                name r13_4;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region13_4;
+        }
+
+        {
+                name r13_5;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region13_5;
+        }
+
+        {
+                name r13_6;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region13_6;
+        }
+
+        {
+                name r13_7;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region13_7;
+        }
+
+        {
+                name r13_8;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region13_8;
+        }
+
+        {
+                name r13_9;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region13_9;
+        }
+
+        {
+                name r13_10;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region13_10;
+        }
+
+
+        {
+                name r14_1;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region14_1;
+        }
+
+        {
+                name r14_2;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region14_2;
+        }
+
+        {
+                name r14_3;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region14_3;
+        }
+
+        {
+                name r14_4;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region14_4;
+        }
+
+        {
+                name r14_5;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region14_5;
+        }
+
+        {
+                name r14_6;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region14_6;
+        }
+
+        {
+                name r14_7;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region14_7;
+        }
+
+        {
+                name r14_8;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region14_8;
+        }
+
+        {
+                name r14_9;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region14_9;
+        }
+
+        {
+                name r14_10;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region14_10;
+        }
+
+
+        {
+                name r15_1;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region15_1;
+        }
+
+        {
+                name r15_2;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region15_2;
+        }
+
+        {
+                name r15_3;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region15_3;
+        }
+
+        {
+                name r15_4;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region15_4;
+        }
+
+        {
+                name r15_5;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region15_5;
+        }
+
+        {
+                name r15_6;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region15_6;
+        }
+
+        {
+                name r15_7;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region15_7;
+        }
+
+        {
+                name r15_8;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region15_8;
+        }
+
+        {
+                name r15_9;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region15_9;
+        }
+
+        {
+                name r15_10;
+                patchInfo
+                {
+                        type wall;
+                }
+                constructFrom set;
+                set region15_10;
+        }
+
+);
+// ************************************************************************* //
